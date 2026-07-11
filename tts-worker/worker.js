@@ -7,7 +7,7 @@ const ALLOWED_ORIGINS = [
 ];
 
 const VOICES = {
-  scout: 'jBpfuIE2acCO8z3wKNLl',
+  scout: 'wWWn96OtTHu1sn8SRGEr',
   narrator: 'EST9Ui6982FZPSi7gCHi',
 };
 
