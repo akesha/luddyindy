@@ -8,7 +8,7 @@ const ALLOWED_ORIGINS = [
 
 const VOICES = {
   scout: 'jBpfuIE2acCO8z3wKNLl',
-  narrator: '21m00Tcm4TlvDq8ikWAM',
+  narrator: 'EST9Ui6982FZPSi7gCHi',
 };
 
 const MAX_TEXT_LENGTH = 1500;
