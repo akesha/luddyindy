@@ -458,9 +458,7 @@ class Component extends DCLogic {
   speak(key, text) {
     if (this.state.speakingKey === key) { this.stopAudio(); this.setState({ speakingKey: null }); return; }
     this.stopAudio();
-    const apiKey = (this.props.elevenLabsKey || '').trim();
-    if (apiKey) this.speakEleven(key, text, apiKey);
-    else this.speakBrowser(key, text);
+    this.speakEleven(key, text, 'proxy');
   }
 
   speakBrowser(key, text) {
@@ -479,16 +477,14 @@ class Component extends DCLogic {
     this.setState({ speakingKey: key });
     try {
       this._audioCache = this._audioCache || new Map();
-      const voiceId = key === 'scout'
-        ? (this.props.scoutVoiceId || 'jBpfuIE2acCO8z3wKNLl')
-        : (this.props.narratorVoiceId || '21m00Tcm4TlvDq8ikWAM');
-      const cacheKey = voiceId + '|' + text;
+      const voice = key === 'scout' ? 'scout' : 'narrator';
+      const cacheKey = voice + '|' + text;
       let url = this._audioCache.get(cacheKey);
       if (!url) {
-        const res = await fetch('https://api.elevenlabs.io/v1/text-to-speech/' + voiceId, {
+        const res = await fetch('https://luddy-tts.akesha.workers.dev', {
           method: 'POST',
-          headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text, model_id: 'eleven_multilingual_v2', voice_settings: { stability: 0.5, similarity_boost: 0.75 } })
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, voice })
         });
         if (!res.ok) throw new Error('ElevenLabs ' + res.status);
         url = URL.createObjectURL(await res.blob());
