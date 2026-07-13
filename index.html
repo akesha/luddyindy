@@ -1127,6 +1127,40 @@ class Component extends DCLogic {
 }
 </script>
 
+<script>
+// Bold every "no calculus" in rendered text (the app template escapes HTML,
+// so this post-processes the DOM and re-applies after React re-renders).
+(function () {
+  function boldNoCalc(root) {
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!n.nodeValue || n.nodeValue.indexOf('no calculus') === -1) return NodeFilter.FILTER_REJECT;
+        var p = n.parentElement;
+        if (!p || p.closest('script,style,textarea,input') || p.classList.contains('nc-bold')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var idx = node.nodeValue.indexOf('no calculus');
+      var match = node.splitText(idx);
+      match.splitText('no calculus'.length);
+      var strong = document.createElement('strong');
+      strong.className = 'nc-bold';
+      strong.textContent = match.nodeValue;
+      match.parentNode.replaceChild(strong, match);
+    });
+  }
+  var pending = null;
+  new MutationObserver(function () {
+    if (pending) return;
+    pending = setTimeout(function () { pending = null; boldNoCalc(document.body); }, 80);
+  }).observe(document.body, { childList: true, subtree: true });
+  boldNoCalc(document.body);
+})();
+</script>
+
 <!-- ===== Scout chat (independent widget, talks to the luddy-scout worker) ===== -->
 <style>
   #scout-chat-launcher {
