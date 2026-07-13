@@ -262,7 +262,7 @@
                 <div style="display: contents;">
                   <div style="padding: 14px 18px; border-bottom: 1px solid #EFE9DF; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #990000; background: #FBF9F5;">{{ row.label }}</div>
                   <sc-for list="{{ row.cells }}" as="cell" hint-placeholder-count="2">
-                    <div style="padding: 14px 18px; border-bottom: 1px solid #EFE9DF; font-size: 14px; line-height: 1.5; color: #1E1A17;">{{ cell.text }}</div>
+                    <div style="padding: 14px 18px; border-bottom: 1px solid #EFE9DF; font-size: 14px; line-height: 1.5; color: #1E1A17; white-space: pre-line;">{{ cell.text }}</div>
                   </sc-for>
                 </div>
               </sc-for>
@@ -392,7 +392,7 @@
         </sc-if>
 
         <div style="background: #F7F4EF; border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-          <div><div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6B6259;">Math you'll need</div><div style="font-size: 14px; line-height: 1.5; margin-top: 3px;">{{ active.math }}</div></div>
+          <div><div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6B6259;">Math you'll need</div><div style="font-size: 14px; line-height: 1.5; margin-top: 3px; white-space: pre-line;">{{ active.math }}</div></div>
           <div><div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #6B6259;">Programming</div><div style="font-size: 14px; line-height: 1.5; margin-top: 3px;">{{ active.langs }}</div></div>
         </div>
 
@@ -561,7 +561,7 @@ class Component extends DCLogic {
         specs: [],
         careers: ['AI Architect', 'AI Bots Designer/Developer', 'AI UX Researcher', 'Business Intelligence Analyst', 'Conversation Designer/Developer', 'Human Factors Engineer', 'Software Developer (Applications)'],
         stats: [],
-        math: 'B.S.: College Algebra, Trig, Calculus 1 & 2, Linear Algebra. B.A.: no calculus.',
+        math: 'B.S.: College Algebra, Trig, Calculus for Data Science 1 & 2, Linear Algebra, Biostatistics.\nB.A.: College Algebra, Trig, Linear Algebra, Biostatistics — no calculus.',
         langs: 'Python (2 semesters)',
         minor: 'No minor required',
         quoteName: 'Dr. Sunandan Chakroborty, AI Program Director',
@@ -617,7 +617,7 @@ class Component extends DCLogic {
         stats: [
           { value: '$131K', label: 'national median wage, computer & information research scientists (BLS, 2021)' }
         ],
-        math: 'B.S.: College Algebra, Trig, Calculus 1 & 2, Linear Algebra. B.A.: no calculus, requires a minor.',
+        math: 'B.S. (on-campus): College Algebra, Trig, Calculus for Data Science 1 & 2, Linear Algebra, Biostatistics.\nB.S. (online): Precalculus, Trig, Calculus for Data Science 1 & 2, Linear Algebra.\nB.A.: College Algebra, Trig, Linear Algebra, Probability/Biostatistics — no calculus; requires a minor.',
         langs: 'Python, Java, C++',
         minor: 'B.A.: any minor/certificate. B.S.: optional via selectives.',
         quoteName: 'Dr. Mohammad Hossain, CS Program Director',
