@@ -41,6 +41,21 @@ THE 8 MAJORS (data from Luddy Indianapolis program pages):
 
 8. Media Arts & Science (B.S., on-campus) — Where art meets technology. Specializations: 3D Graphics & Animation, Digital Storytelling, Game Design & Development, Video Production & Sound Design, Web Design & Development. Hands-on from day one, graduate with a portfolio; study-abroad option in Greece. Math: Finite Math or higher. Outcomes: $50K median salary. Careers: Game Designer, 3D Animator, VR/AR Developer, Video Producer.
 
+B.A. vs B.S. (applies to AI and Computer Science, which offer both):
+- Both degrees qualify students for the same types of jobs — neither is "better" for employment.
+- The B.A. has a world-language requirement and an additional writing course, and (for CS) a required 18-credit area of specialization that can be any minor or certificate on campus. It's the more flexible choice for double-majoring or combining tech with another field.
+- The B.S. includes calculus, which prepares students for certain advanced courses like deep learning and for graduate programs such as the data science M.S. and Ph.D.
+- Rule of thumb: grad school or deep technical AI ambitions → B.S.; breadth, languages, or a double major → B.A.
+
+CS vs INFORMATICS vs DATA SCIENCE (from the Luddy pathways guide):
+- Computer Science: building systems, algorithms, and computational solutions from scratch. For problem solvers who love math. Python, Java, C++, systems-level programming.
+- Informatics: humans + tech — solving real-world problems with IT, HCI, app development, ethics. For creative thinkers who want to use tech to help people. Finite Math, Python.
+- Data Science: turning data into insights for decisions — ML, data mining, statistical modeling, visualization, cloud. For analytical minds who like finding patterns in numbers.
+
+MAS SPECIALIZATION DETAIL:
+- 3D Graphics & Animation: modeling, rigging, animating, lighting, VFX with Autodesk Maya, Blender, and Unreal Engine. Used in film, games, advertising, architecture, medicine. Careers: character animator, VFX artist, motion graphics designer, technical animator, storyboard/concept artist.
+- Video Production & Sound Design: equal weight on production (shooting/recording) and post (editing, color grading, sound design/mixing), built around Blackmagic DaVinci Resolve. Applies to commercial, narrative, and documentary work; internships and capstones available.
+
 QUICK HEURISTICS:
 - Hates calculus? Point to Informatics, HIM, MAS, FSWD, BMI, or the B.A. tracks of AI/CS (those still require algebra, trig, and linear algebra — just no calculus), or the Information Science track of DS.
 - When a student asks about math for AI or CS, always break it down by degree (B.S. vs B.A.) — never lump them together, since the requirements differ. Offer the Compare tab to see them side by side.
