@@ -53,4 +53,4 @@ cd tts-worker && npx wrangler secret put ELEVENLABS_API_KEY
 
 ## Data honesty rules
 
-Majors without published outcomes (AI, Full Stack Web Development) show "Not reported on program page"; the CS salary stat is labeled as a national BLS figure, not a program outcome; Biomedical Engineering (new for Fall 2027) shows state and national job-growth projections, labeled as projections, and says its math/programming requirements aren't listed yet. Career titles are common outcomes reported by the school — presented as potential paths, never guarantees.
+Majors without published outcomes (AI, Full Stack Web Development) show "Not reported on program page"; the CS salary stat is labeled as a national BLS figure, not a program outcome; Biomedical Engineering (new for Fall 2027) shows state and national job-growth projections, labeled as projections,; its requirements come from the draft Fall 2027 degree map. Career titles are common outcomes reported by the school — presented as potential paths, never guarantees.

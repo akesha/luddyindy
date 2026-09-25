@@ -579,14 +579,16 @@ class Component extends DCLogic {
           { head: 'Interdisciplinary foundations:', rest: 'biology, chemistry, physics, medicine, and engineering applied to technologies that interface with living systems.' },
           { head: 'AI-integrated curriculum:', rest: 'AI woven through the whole degree — a feature that sets it apart from BME programs at other schools.' },
           { head: 'Clinical immersion:', rest: 'real medical scenarios, bedside research, and clinical shadowing with medical professionals at the IU School of Medicine — without leaving campus.' },
-          { head: 'Industry-shaped curriculum:', rest: 'hands-on, interdisciplinary engineering developed in consultation with industry partners.' }
+          { head: 'Industry-shaped curriculum:', rest: 'hands-on, interdisciplinary engineering developed in consultation with industry partners.' },
+          { head: 'Science & engineering core:', rest: 'biology, chemistry, physics, anatomy & physiology, biomaterials, instrumentation & signal processing, rapid prototyping & device fabrication, digital health, and biomedical ethics & regulations.' },
+          { head: 'Senior design:', rest: 'a two-semester capstone taking a biomedical device from design & development through verification & implementation.' }
         ],
-        skills: ['Medical device design', 'Bioinstrumentation', 'Sensor design', 'AI in healthcare', 'Patient-centered design', 'Regenerative medicine'],
+        skills: ['Medical device design', 'Bioinstrumentation', 'Signal processing', 'Rapid prototyping', 'AI in healthcare', 'Python'],
         specs: [
-          { name: 'Tissue and Cellular Engineering', desc: 'Regenerative medicine and biomanufacturing.' },
-          { name: 'Biomedical Devices and Systems', desc: 'Sensor design, bioinstrumentation, and medical device fabrication.' },
-          { name: 'Computational Bioengineering and AI', desc: 'AI, clinical decision support, and data integration to improve patient diagnostics and outcomes.' },
-          { name: 'Clinical and Translational Engineering', desc: 'Patient-centered design and clinical implementation.' }
+          { name: 'Tissue and Cellular Engineering', desc: 'Regenerative medicine and biomanufacturing. Courses: advanced biology (Genetics & Molecular Biology or Cell Biology), Cell Biology Lab, Bioprocess & Tissue Engineering.' },
+          { name: 'Biomedical Devices and Systems', desc: 'Sensor design, bioinstrumentation, and medical device fabrication. Courses: Bionanosystems Principles, Biomedical Devices & Sensors, Human–Computer Interaction.' },
+          { name: 'Computational Bioengineering and AI', desc: 'AI, clinical decision support, and data integration to improve patient diagnostics and outcomes. Courses: Computational Methods for BMI, Biomedical Image Processing, Machine Learning for Bioinformatics.' },
+          { name: 'Clinical and Translational Engineering', desc: 'Patient-centered design and clinical implementation. Courses: Clinical & Translational BME, Clinical Information Systems, Assistive Technologies.' }
         ],
         careers: ['Biomedical Engineer', 'Medical Device Materials Engineer', 'Clinical Data Manager', 'Quality and Regulatory Specialist', 'Healthcare Technology Manager'],
         stats: [
@@ -594,9 +596,9 @@ class Component extends DCLogic {
           { value: '8%', label: 'projected Indiana job growth for bioengineers & biomedical engineers, 2022–2032 (Indiana DWD) — a projection, not a program outcome' },
           { value: '5%', label: 'projected national job growth, 2024–2034 (BLS)' }
         ],
-        math: 'Not listed on the program page — ask a Luddy advisor.',
-        langs: 'Not listed on the program page (AI is integrated throughout)',
-        minor: 'Choose one of four specialization tracks',
+        math: 'Calculus I & II (C or better), Linear Algebra, and Biostatistics or Statistics. The draft Fall 2027 degree map also lists Differential Equations.',
+        langs: 'Python (2 semesters)',
+        minor: 'No minor listed — a 3-course emphasis (choose 1 of 4 tracks) plus 2 BME electives',
         quoteName: '',
         quoteText: '',
         different: 'Biomedical Informatics works with health and biological data; Biomedical Engineering designs the devices, sensors, engineered tissues, and AI diagnostics that interface with living systems. The curriculum is Pre-Med Compatible — technical electives can cover medical school requirements with few or no additional credits. An Industrial Advisory Board with leaders from Eli Lilly, Roche, Cook Medical, and Zimmer Biomet keeps skills matched to employers, and a five-year accelerated bachelor’s + master’s option is available. (Luddy Bloomington also offers a BME degree with an accelerated pre-med pathway.)',
@@ -806,7 +808,7 @@ class Component extends DCLogic {
       { text: 'Medicine and the human body fascinate me.', kicker: 'Health life', w: { bmi: 3, bme: 2, him: 2 } },
       { text: 'I\u2019d love to design a medical device that helps patients.', kicker: 'Builder life', w: { bme: 3, bmi: 1 } },
       { text: 'I\u2019m usually the one who organizes the group project.', kicker: 'Leader life', w: { him: 2, inf: 2 } },
-      { text: 'Bring on the calculus — I actually like math.', kicker: 'Math check', w: { cs: 2, ds: 2, ai: 2 } },
+      { text: 'Bring on the calculus — I actually like math.', kicker: 'Math check', w: { cs: 2, ds: 2, ai: 2, bme: 2 } },
       { text: 'Honestly? I\u2019d rather keep math to a minimum.', kicker: 'Math check', w: { mas: 2, him: 2, fswd: 1 } },
       { text: 'I could see myself working in a hospital or health organization.', kicker: 'Workplace', w: { him: 3, bmi: 2, bme: 1 } },
       { text: 'I care a lot about how technology affects people and society.', kicker: 'Big picture', w: { inf: 2, him: 1, mas: 1 } },
