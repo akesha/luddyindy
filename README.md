@@ -2,13 +2,13 @@
 
 **Live site:** https://akesha.github.io/luddyindy/
 
-An interactive guide that helps prospective and undecided students find their fit among the 8 undergraduate majors at the Luddy School of Informatics, Computing, and Engineering at IU Indianapolis. All content — curriculum details, skills, salaries, and career outcomes — comes from Luddy's official program pages, and the site frames itself around a low-pressure message: "there's no wrong door."
+An interactive guide that helps prospective and undecided students find their fit among the 9 undergraduate majors at the Luddy School of Informatics, Computing, and Engineering at IU Indianapolis. All content — curriculum details, skills, salaries, and career outcomes — comes from Luddy's official program pages, and the site frames itself around a low-pressure message: "there's no wrong door."
 
 ## Four ways to explore
 
-- **Swipe Quiz** — A deck of 14 "sounds like me?" cards (e.g., *"I lose track of time when I'm writing code"*). Students swipe right on statements that resonate and left on ones that don't, and their answers are scored against all 8 majors to produce ranked matches with explanations of *why* each major matched.
+- **Swipe Quiz** — A deck of 15 "sounds like me?" cards (e.g., *"I lose track of time when I'm writing code"*). Students swipe right on statements that resonate and left on ones that don't, and their answers are scored against all 9 majors to produce ranked matches with explanations of *why* each major matched.
 
-- **Browse Majors** — Card-grid view of all 8 majors with degree type, format (on-campus/online), skill tags, and outcome stats. Clicking Details opens a full profile: what you'll learn, skills you'll build, specializations, math and programming requirements, career paths, a quote from the program director, and a fictional "a day in this life" story that makes each career concrete.
+- **Browse Majors** — Card-grid view of all 9 majors with degree type, format (on-campus/online), skill tags, and outcome stats. Clicking Details opens a full profile: what you'll learn, skills you'll build, specializations, math and programming requirements, career paths, a quote from the program director, and a fictional "a day in this life" story that makes each career concrete.
 
 - **Compare** — Pick 2–3 majors and see them side by side in a table: math required, programming languages, minor requirements, reported salary outcomes, specializations, and sample careers.
 
@@ -53,4 +53,4 @@ cd tts-worker && npx wrangler secret put ELEVENLABS_API_KEY
 
 ## Data honesty rules
 
-Majors without published outcomes (AI, Full Stack Web Development) show "Not reported on program page"; the CS salary stat is labeled as a national BLS figure, not a program outcome. Career titles are common outcomes reported by the school — presented as potential paths, never guarantees.
+Majors without published outcomes (AI, Full Stack Web Development) show "Not reported on program page"; the CS salary stat is labeled as a national BLS figure, not a program outcome; Biomedical Engineering (new for Fall 2027) shows state and national job-growth projections, labeled as projections, and says its math/programming requirements aren't listed yet. Career titles are common outcomes reported by the school — presented as potential paths, never guarantees.
